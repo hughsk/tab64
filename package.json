@@ -1,0 +1,33 @@
+{
+  "name": "tab64",
+  "description": "Encode/decode typed arrays (e.g. Float32Array, Uint8Array) to and from base64 strings.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "browser": "index.js",
+  "dependencies": {
+    "dtype": "~0.1.0"
+  },
+  "devDependencies": {
+    "tape": "~1.1.1"
+  },
+  "scripts": {},
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://github.com/hughsk)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/tab64"
+  },
+  "bugs": {
+    "url": "https://github.com/hughsk/tab64/issues"
+  },
+  "keywords": [
+    "binary",
+    "data",
+    "base64",
+    "typed",
+    "arrays",
+    "float32",
+    "uint8",
+    "convert"
+  ]
+}

@@ -2,6 +2,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Base64_encoding_and_decoding#Appendix.3A_Decode_a_Base64_string_to_Uint8Array_or_ArrayBuffer
 
 var dtype = require('dtype')
+var ceil = Math.ceil
 
 module.exports.encode = encode
 module.exports.decode = decode
@@ -66,6 +67,9 @@ function decode(input, output) {
   if (!output) output = new Uint8Array(outputLength)
   if (typeof output === 'string') {
     var type = output
+    var bytes = parseInt(type.match(/[0-9]+/g), 10) / 8
+    var offset = ceil(outputLength / bytes) * bytes - outputLength
+    if (bytes) outputLength += offset
     output = new Uint8Array(outputLength)
     rvalue = new (dtype(type))(output.buffer)
   } else {

@@ -1,7 +1,7 @@
 {
   "name": "tab64",
   "description": "Encode/decode typed arrays (e.g. Float32Array, Uint8Array) to and from base64 strings.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "browser": "index.js",
   "dependencies": {
